@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Dash.css';
+import styles from './Dash.module.css';
 
 class Dash extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Dash extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="dashHeader">DASH</h1>
+        <h1 className={styles.dashHeader}>DASH</h1>
         <Link to="/settings">
           <p>Settings</p>
         </Link>

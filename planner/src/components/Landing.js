@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Landing.css';
+import styles from './Landing.module.css';
 
 class Landing extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="landingHeader">LANDING</h1>
+        <h1 className={styles.landingHeader}>LANDING</h1>
         <Link to="/settings">
           <p>Settings</p>
         </Link>

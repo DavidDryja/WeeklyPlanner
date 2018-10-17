@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Settings.css';
+import styles from './Settings.module.css';
 
 class Settings extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Settings extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="settingsHeader">SETTINGS</h1>
+        <h1 className={styles.settingsHeader}>SETTINGS</h1>
         <Link to="/dash">
           <p>Dash</p>
         </Link>
