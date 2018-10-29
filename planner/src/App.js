@@ -4,6 +4,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Landing from './components/Landing';
 import Dash from './components/Dash';
 import Settings from './components/Settings';
+import Login from './components/Login';
+import Register from './components/Register';
+
 
 const App = () => (
   <BrowserRouter>
@@ -11,6 +14,9 @@ const App = () => (
       <Route exact path="/" component={Landing} />
       <Route exact path="/dash" component={Dash} />
       <Route exact path="/settings" component={Settings} />
+	  <Route exact path="/login" component={Login} />
+      <Route exact path="/register" component={Register} />
+
     </div>
   </BrowserRouter>
 )
