@@ -18,6 +18,13 @@ class Landing extends React.Component {
         <Link to="/dash">
           <p>Dash</p>
         </Link>
+		<Link to="/Login">
+          <p>Login</p>
+        </Link>
+		
+		<Link to="/Register">
+          <p>Register</p>
+        </Link>
       </div>
     )
   }
