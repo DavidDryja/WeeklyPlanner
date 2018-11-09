@@ -1,3 +1,28 @@
 .dashHeader {
   color: #fb617f;
 }
+.app{
+  border:solid;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.task {
+  padding: 10px;
+  margin: 100px;
+  border: solid 2px black;
+}
+
+.button{
+position: relative;
+margin: auto
+}
+
+.textInput {
+  position: relative;
+margin: auto
+
+}
