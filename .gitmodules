@@ -1,0 +1,3 @@
+[submodule "heroku-cra-node"]
+	path = heroku-cra-node
+	url = https://github.com/mars/heroku-cra-node.git
