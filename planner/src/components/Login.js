@@ -1,70 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
+
 import img from './logo.png'
-import styles from './Login.css';
-import Image from 'react-image-resizer';
-import { Link } from 'react-router-dom';
-import Center from 'react-center';
+import styles from './Login.module.css';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class LoginPage extends React.Component {
-    constructor(props) {
-    super(props);
-	}
+class Login extends React.Component {
   componentDidMount(){
     document.title = "Login"
   }
 
-
-
   render() {
-
     return (
-      <div className="LoginMain">
-	  <Center>
-        <div className="Logo">
-			<Image src={img} height={400} width={600} />	
-		
-
-		</div>
-		</Center>
-
-		<Center>
-          <form>
-		  <div >
-            <input placeholder="Username" />
-			</div>
-			<div>
-			<input placeholder="Password" />
-			</div>
-			<div>
-            <button type="submit"> Login </button>
-			</div>
-
-			<div style={{marginBottom:'300em'}}>
-			<br/>
-						Don't have an account? Sign up here!
-			</div>
-          </form>
-	</Center>
+      <div className={styles.loginContain}>
+        <img src={img} className={styles.logo} />
+        <form className={styles.loginForm}>
+          <input placeholder="Username" />
+          <input placeholder="Password" type="password" />
+          <button type="submit">Sign in</button>
+        </form>
       </div>
     )
   }
 }
 
-export default LoginPage
+export default Login

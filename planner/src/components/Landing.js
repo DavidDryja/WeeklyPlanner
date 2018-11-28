@@ -2,29 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Landing.module.css';
+import Login from './Login';
+import Register from './Register';
 
 class Landing extends React.Component {
-  constructor(props) {
-    super(props);
+  state = {
+    login: true
+  }
+
+  handleChange = () => {
+    this.setState({ login: !this.state.login })
   }
 
   render() {
     return (
-      <div>
-        <h1 className={styles.landingHeader}>LANDING</h1>
-        <Link to="/settings">
-          <p>Settings</p>
-        </Link>
-        <Link to="/dash">
-          <p>Dash</p>
-        </Link>
-		<Link to="/Login">
-          <p>Login</p>
-        </Link>
-		
-		<Link to="/Register">
-          <p>Register</p>
-        </Link>
+      <div className={styles.contain}>
+        {this.state.login
+          ? <Login />
+          : <Register />
+        }
+        <p onClick={this.handleChange}>
+          {this.state.login
+            ? 'Dont have an account? Sign up.'
+            : 'Already have an account? Sign in.'
+          }
+        </p>
       </div>
     )
   }
