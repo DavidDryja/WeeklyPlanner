@@ -4,8 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Landing from './components/Landing';
 import Dash from './components/Dash';
 import Settings from './components/Settings';
-import Login from './components/Login';
-import Register from './components/Register';
 
 
 const App = () => (
