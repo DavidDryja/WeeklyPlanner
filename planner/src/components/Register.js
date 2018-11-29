@@ -11,7 +11,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className={styles.loginContain}>
-        <img src={img} className={styles.logo} />
+        <img src={img} className={styles.logo} alt="Paradise Planner" />
         <form className={styles.loginForm}>
           <input placeholder="Username" />
           <input placeholder="Password" type="password" />

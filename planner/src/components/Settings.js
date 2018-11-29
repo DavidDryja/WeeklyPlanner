@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 import styles from './Settings.module.css';
 
 class Settings extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
